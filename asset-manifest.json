@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/breaking-bad-characters/static/css/main.073c9b0a.css",
-    "main.js": "/breaking-bad-characters/static/js/main.d38e48f1.js",
-    "static/js/787.4efa206a.chunk.js": "/breaking-bad-characters/static/js/787.4efa206a.chunk.js",
-    "index.html": "/breaking-bad-characters/index.html",
-    "main.073c9b0a.css.map": "/breaking-bad-characters/static/css/main.073c9b0a.css.map",
-    "main.d38e48f1.js.map": "/breaking-bad-characters/static/js/main.d38e48f1.js.map",
-    "787.4efa206a.chunk.js.map": "/breaking-bad-characters/static/js/787.4efa206a.chunk.js.map"
+    "main.css": "/Breaking-bad-characters/static/css/main.073c9b0a.css",
+    "main.js": "/Breaking-bad-characters/static/js/main.629c2ff9.js",
+    "static/js/787.4efa206a.chunk.js": "/Breaking-bad-characters/static/js/787.4efa206a.chunk.js",
+    "index.html": "/Breaking-bad-characters/index.html",
+    "main.073c9b0a.css.map": "/Breaking-bad-characters/static/css/main.073c9b0a.css.map",
+    "main.629c2ff9.js.map": "/Breaking-bad-characters/static/js/main.629c2ff9.js.map",
+    "787.4efa206a.chunk.js.map": "/Breaking-bad-characters/static/js/787.4efa206a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.d38e48f1.js"
+    "static/js/main.629c2ff9.js"
   ]
 }
