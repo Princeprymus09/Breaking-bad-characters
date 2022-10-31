@@ -1,13 +1,11 @@
 import axios from "axios";
 
+const API_URL = "https://breakingbadapi.com/api/characters";
 
-const API_URL =  "https://breakingbadapi.com/api/characters";
-
-
-export const fetchData = async (text) =>{
-    try {
-      return await  axios.get(`${API_URL}?name=${text}`);
-    } catch (error) {
-        console.log("Error While fetching the data " , error)       
-    }
-}
+export const fetchData = async (text) => {
+  try {
+    return await axios.get(`${API_URL}?name=${text}`);
+  } catch (error) {
+    console.log("Error While fetching the data ", error);
+  }
+};
