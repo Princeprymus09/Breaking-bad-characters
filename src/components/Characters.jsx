@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Box, styled, Grid } from "@mui/material";
-import { fetchData } from "../services/api";
 import Character from "./Character";
 
 const Style_ch = styled(Box)`
@@ -24,7 +23,7 @@ const full_data = [
     category: "Breaking Bad",
     better_call_saul_appearance: [],
   },
- 
+
   {
     char_id: 3,
     name: "Skyler White",
@@ -56,7 +55,7 @@ const full_data = [
     category: "Breaking Bad",
     better_call_saul_appearance: [],
   },
-  
+
   {
     char_id: 6,
     name: "Marie Schrader",
@@ -161,7 +160,7 @@ const full_data = [
     category: "Breaking Bad",
     better_call_saul_appearance: [],
   },
-  
+
   {
     char_id: 15,
     name: "Todd Alquist",
@@ -188,8 +187,7 @@ const full_data = [
     category: "Breaking Bad",
     better_call_saul_appearance: [],
   },
-  
- 
+
   {
     char_id: 18,
     name: "Brandon Mayhew",
@@ -463,7 +461,7 @@ const full_data = [
     category: "Breaking Bad",
     better_call_saul_appearance: [],
   },
- 
+
   {
     char_id: 40,
     name: "George Merkert",
@@ -785,14 +783,20 @@ const Characters = ({ text }) => {
   const [character, setCharacter] = useState([]);
 
   useEffect(() => {
-    getData();
-  }, []);
+    getData(text);
+  }, [text]);
 
   const getData = async () => {
-    // let response = await fetchData(text);
-    // console.log(response);
-    setCharacter(full_data);
+    if (text) {
+      const fillter_data = full_data.filter((item) =>
+        item.name.toLowerCase().includes(text)
+      );
+      setCharacter(fillter_data);
+    } else {
+      setCharacter(full_data);
+    }
   };
+
   return (
     <Style_ch>
       <Grid container spacing={4}>
