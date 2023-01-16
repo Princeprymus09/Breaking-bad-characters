@@ -30,7 +30,7 @@ const Header = ({ setText }) => {
   const getText = (e) => {
     setText(e.target.value);
   };
-
+      
   return (
     <StyleHeader position="static">
       <Toolbar>
