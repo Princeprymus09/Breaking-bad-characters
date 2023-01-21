@@ -786,31 +786,6 @@ const Characters = ({ text }) => {
     getData(text);
   }, [text]);
 
-
-  function compareName(a, b) {
-
-    // converting to uppercase to have case-insensitive comparison
-    
-    const name1 = a.name.toUpperCase();
-    
-    const name2 = b.name.toUpperCase();
-    
-    let comparison = 0;
-    
-    if (name1 > name2) {
-    
-    comparison = 1;
-    
-    } else if (name1 < name2) {
-    
-    comparison = -1;
-    
-    }
-    
-    return comparison;
-    
-    };
-
   const getData = async () => {
     if (text) {
       const fillter_data = full_data.filter((item) =>
@@ -818,11 +793,8 @@ const Characters = ({ text }) => {
       );
       setCharacter(fillter_data);
     } else {
-      console.log(full_data.sort(compareName));
-      setCharacter(full_data.sort((a,b)=> a.birthday - b.birthday));
+      setCharacter(full_data);
     }
-
-
   };
 
   return (

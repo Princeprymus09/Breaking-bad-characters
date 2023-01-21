@@ -8,7 +8,7 @@ const Images = styled("img")({
 
 const Character = ({ character }) => {
   return (
-    <Card>
+    <Card>      
       <Tooltip
         title={
           <Box>
